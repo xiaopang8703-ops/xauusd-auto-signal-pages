@@ -1,11 +1,40 @@
-# Package 4 Demo Smoke Plan
+# XAUUSD Codex Hourly Candidate
 
-This file is generated for MT5 Package 4 readback smoke testing.
-It is not a market analysis plan and MT5 must not parse it as an instruction.
+This generator output is a candidate packet input only. The writer owns manifest, heartbeat, Validator output, READY, and bridge files.
 
-- plan_id: `xauusd-20260603-011145Z`
-- sequence_no: `202606030111`
+- plan_id: `xauusd-20260610-030351Z`
+- sequence_no: `202606100300`
+- created_at_utc: `2026-06-10T03:03:51Z`
+- valid_until_utc: `2026-06-10T04:03:51Z`
 - action_mode: `demo_trade`
 - validator_result: `accepted_for_demo_trade`
-- selected_scenario_id: `A`
-- outbox: `/Users/waynezhan/Documents/Codex/2026-06-01/2026-6-1-4546-4519-4523/signals/outbox`
+- selected_scenario_id: `B`
+- current_mid: `4174.56`
+- session: `asia`
+
+## Pre-Live Strategy Safety
+
+- H4/Daily bias, regime, ATR dynamic stop, max chase, and structured-news blackout are generator-side safety gates.
+- `draw_only` candidates may still be emitted for observation when a gate is active.
+- `dry_run_trade` / `demo_trade` candidates are fail-closed when a `STRATEGY_HARD_GATE_*` rejection exists.
+- D is observe-only until trend/regime samples justify execution.
+
+## Scenario Ranking
+
+- A: pullback_reject sell enabled=True total=0.620962
+- B: breakout_retest_fail sell enabled=True total=0.733462
+- C: sweep_and_reclaim buy enabled=False total=-
+- D: display_only buy enabled=False total=- observe_only
+
+## Observation Scenarios
+
+- D: reclaim-pullback / structure-flip observation only. It is not present in `trade_scenarios`, not scored by the Validator, and not executable by Package 4.
+
+## Selected Trade Geometry
+
+- entry_zone: `4174.56 - 4181.56`
+- expected_fill_price: `4174.56`
+- stop_loss: `4219.31`
+- tp1/tp2/tp3: `4129.81 / 4085.06 / 4049.27`
+
+MT5 must not parse this Markdown file as a trading instruction.
