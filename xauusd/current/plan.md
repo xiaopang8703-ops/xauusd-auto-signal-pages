@@ -2,19 +2,20 @@
 
 This generator output is a candidate packet input only. The writer owns manifest, heartbeat, Validator output, READY, and bridge files.
 
-- plan_id: `xauusd-20260610-032551Z`
-- sequence_no: `202606100300`
-- created_at_utc: `2026-06-10T03:25:51Z`
-- valid_until_utc: `2026-06-10T04:25:51Z`
+- plan_id: `xauusd-20260610-044506Z`
+- sequence_no: `202606100400`
+- created_at_utc: `2026-06-10T04:45:06Z`
+- valid_until_utc: `2026-06-10T05:45:06Z`
 - action_mode: `demo_trade`
 - validator_result: `accepted_for_demo_trade`
 - selected_scenario_id: `B`
-- current_mid: `4175.93`
+- current_mid: `4173.62`
 - session: `asia`
 
 ## Pre-Live Strategy Safety
 
-- H4/Daily bias, regime, ATR dynamic stop, max chase, and structured-news blackout are generator-side safety gates.
+- H4/H1 bias alignment, regime, ATR dynamic stop, max chase, and structured-news blackout are generator-side safety gates.
+- Daily bias is observation-only context and is not a hard execution gate.
 - `draw_only` candidates may still be emitted for observation when a gate is active.
 - `dry_run_trade` / `demo_trade` candidates are fail-closed when a `STRATEGY_HARD_GATE_*` rejection exists.
 - D is observe-only until trend/regime samples justify execution.
@@ -32,9 +33,9 @@ This generator output is a candidate packet input only. The writer owns manifest
 
 ## Selected Trade Geometry
 
-- entry_zone: `4175.93 - 4182.93`
-- expected_fill_price: `4175.93`
-- stop_loss: `4220.53`
-- tp1/tp2/tp3: `4131.33 / 4086.73 / 4051.04`
+- entry_zone: `4173.62 - 4180.62`
+- expected_fill_price: `4173.62`
+- stop_loss: `4213.65`
+- tp1/tp2/tp3: `4133.59 / 4093.56 / 4061.53`
 
 MT5 must not parse this Markdown file as a trading instruction.
