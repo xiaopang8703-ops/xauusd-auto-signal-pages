@@ -4,8 +4,8 @@ This file is generated for MT5 Package 4 readback smoke testing.
 It is not a market analysis plan and MT5 must not parse it as an instruction.
 It is never eligible for controlled demo mutation or order submission.
 
-- plan_id: `xauusd-20260611-031820Z`
-- sequence_no: `202606110318`
+- plan_id: `xauusd-20260611-043131Z`
+- sequence_no: `202606110431`
 - action_mode: `demo_trade`
 - validator_result: `accepted_for_demo_trade`
 - selected_scenario_id: `A`
