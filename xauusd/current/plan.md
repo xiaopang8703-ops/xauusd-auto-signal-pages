@@ -2,14 +2,14 @@
 
 This generator output is a candidate packet input only. The writer owns manifest, heartbeat, Validator output, READY, and bridge files.
 
-- plan_id: `xauusd-20260615-030159Z`
-- sequence_no: `202606150300`
-- created_at_utc: `2026-06-15T03:01:59Z`
-- valid_until_utc: `2026-06-15T04:01:59Z`
+- plan_id: `xauusd-20260615-040159Z`
+- sequence_no: `202606150400`
+- created_at_utc: `2026-06-15T04:01:59Z`
+- valid_until_utc: `2026-06-15T05:01:59Z`
 - action_mode: `demo_trade`
 - validator_result: `accepted_for_demo_trade`
-- selected_scenario_id: `C`
-- current_mid: `4331.03`
+- selected_scenario_id: `B`
+- current_mid: `4325.52`
 - session: `asia`
 
 ## Pre-Live Strategy Safety
@@ -23,25 +23,26 @@ This generator output is a candidate packet input only. The writer owns manifest
 
 ## Scenario Ranking
 
-- A: pullback_reject buy enabled=True total=0.620945
-- B: breakout_retest_fail sell enabled=True total=0.620945
-- C: breakout_retest_fail buy enabled=True total=0.733445
-- D: sweep_and_reclaim sell enabled=True total=0.620945
-- E: sweep_and_reclaim sell enabled=True total=0.620945
+- A: pullback_reject sell enabled=True total=0.620962
+- B: breakout_retest_fail buy enabled=True total=0.733462
+- C: breakout_retest_fail sell enabled=True total=0.620962
+- D: sweep_and_reclaim buy enabled=True total=0.620962
+- E: sweep_and_reclaim buy enabled=True total=0.620962
 
 ## ABCDE Execution Contract
 
-- A: primary pullback/reject setup in the main intraday direction.
-- B: counter-direction repair/reclaim setup after the key turn line is accepted.
-- C: primary breakout/retest-fail continuation setup.
-- D/E: sweep/reclaim recovery setups for exhaustion or extreme reclaim conditions.
+- A: first pullback/reject setup in the main intraday direction.
+- B: deeper pullback/reject setup in the main intraday direction.
+- C: main-direction breakout/retest continuation setup.
+- D: near-side fake-breakout/sweep reversal against the main intraday direction.
+- E: far-side invalidation/breakdown-or-breakout retest against the main intraday direction.
 - Package4 must consume only the selected scenario; non-selected scenarios are alternatives, not simultaneous orders.
 
 ## Selected Trade Geometry
 
-- entry_zone: `4323.73 - 4330.73`
-- expected_fill_price: `4330.73`
-- stop_loss: `4289.18`
-- tp1/tp2/tp3: `4372.28 / 4413.82 / 4447.06`
+- entry_zone: `4321.52 - 4328.52`
+- expected_fill_price: `4328.52`
+- stop_loss: `4289.6`
+- tp1/tp2/tp3: `4367.44 / 4406.36 / 4437.49`
 
 MT5 must not parse this Markdown file as a trading instruction.
