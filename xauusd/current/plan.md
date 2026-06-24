@@ -2,14 +2,14 @@
 
 This generator output is a candidate packet input only. The writer owns manifest, heartbeat, Validator output, READY, and bridge files.
 
-- plan_id: `xauusd-20260624-040126Z`
-- sequence_no: `202606240400`
-- created_at_utc: `2026-06-24T04:01:26Z`
-- valid_until_utc: `2026-06-24T05:01:26Z`
+- plan_id: `xauusd-20260624-050155Z`
+- sequence_no: `202606240500`
+- created_at_utc: `2026-06-24T05:01:55Z`
+- valid_until_utc: `2026-06-24T06:01:55Z`
 - action_mode: `demo_trade`
 - validator_result: `accepted_for_demo_trade`
 - selected_scenario_id: `B`
-- current_mid: `4061.63`
+- current_mid: `4064.03`
 - session: `asia`
 
 ## Pre-Live Strategy Safety
@@ -20,6 +20,14 @@ This generator output is a candidate packet input only. The writer owns manifest
 - `draw_only` candidates may still be emitted for observation when a gate is active.
 - `dry_run_trade` / `demo_trade` candidates are fail-closed when a `STRATEGY_HARD_GATE_*` rejection exists.
 - A/B/C/D/E are mutually exclusive candidate scenarios; only `selected_scenario_id` is executable for a published signal.
+
+### Public Source Confluence
+
+- enabled: `False`
+- technical_direction: `unknown` confidence=`0.0`
+- rsi_state: `unknown` overextension_risk=`none`
+- news_alignment: `neutral_or_mixed`
+- score effect: adjusts Validator-recomputable `structure_score`; Package4 gates are unchanged.
 
 ## Scenario Ranking
 
