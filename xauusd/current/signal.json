@@ -77,14 +77,6 @@
       "M5": {
         "closed_bars": [
           {
-            "close": 4114.13,
-            "high": 4114.2,
-            "low": 4108.7,
-            "open": 4111.62,
-            "tick_volume": 1318,
-            "time_utc": "2026-07-10T07:20:00Z"
-          },
-          {
             "close": 4114.05,
             "high": 4115.4,
             "low": 4112.52,
@@ -171,14 +163,22 @@
             "open": 4106.96,
             "tick_volume": 1045,
             "time_utc": "2026-07-10T08:15:00Z"
+          },
+          {
+            "close": 4107.7,
+            "high": 4108.45,
+            "low": 4106.28,
+            "open": 4107.27,
+            "tick_volume": 969,
+            "time_utc": "2026-07-10T08:20:00Z"
           }
         ],
-        "last_closed_bar_time_utc": "2026-07-10T08:15:00Z"
+        "last_closed_bar_time_utc": "2026-07-10T08:20:00Z"
       }
     },
     "used_for_confirmation": true
   },
-  "broker_server_time_snapshot": "2026-07-10T08:16:47Z",
+  "broker_server_time_snapshot": "2026-07-10T08:22:02Z",
   "confirmation_evidence": [
     {
       "breakout_bar_time_utc": null,
@@ -213,7 +213,7 @@
       "touch_bar_time_utc": "2026-07-10T08:00:00Z"
     },
     {
-      "breakout_bar_time_utc": "2026-07-10T08:01:47Z",
+      "breakout_bar_time_utc": "2026-07-10T08:07:02Z",
       "confirmation_bar_time_utc": "2026-07-10T08:15:00Z",
       "confirmation_close": 4107.27,
       "entry_zone_touched": true,
@@ -223,29 +223,29 @@
       ],
       "evidence_timeframe": "M15",
       "reclaim_bar_time_utc": null,
-      "retest_bar_time_utc": "2026-07-10T08:01:47Z",
+      "retest_bar_time_utc": "2026-07-10T08:07:02Z",
       "scenario_id": "C",
       "structure_stage": "INVALID_OR_CONFLICTED",
       "touch_bar_time_utc": "2026-07-10T08:00:00Z"
     },
     {
       "breakout_bar_time_utc": null,
-      "confirmation_bar_time_utc": "2026-07-10T08:15:00Z",
-      "confirmation_close": 4107.27,
+      "confirmation_bar_time_utc": "2026-07-10T08:20:00Z",
+      "confirmation_close": 4107.7,
       "entry_zone_touched": true,
       "evidence_bar_ids": [
-        "M5:2026-07-10T08:10:00Z",
-        "M5:2026-07-10T08:15:00Z"
+        "M5:2026-07-10T08:15:00Z",
+        "M5:2026-07-10T08:20:00Z"
       ],
       "evidence_timeframe": "M5",
-      "reclaim_bar_time_utc": "2026-07-10T08:16:47Z",
+      "reclaim_bar_time_utc": "2026-07-10T08:22:02Z",
       "retest_bar_time_utc": null,
       "scenario_id": "D",
       "structure_stage": "INVALID_OR_CONFLICTED",
-      "touch_bar_time_utc": "2026-07-10T08:10:00Z"
+      "touch_bar_time_utc": "2026-07-10T08:15:00Z"
     },
     {
-      "breakout_bar_time_utc": "2026-07-10T08:01:47Z",
+      "breakout_bar_time_utc": "2026-07-10T08:07:02Z",
       "confirmation_bar_time_utc": "2026-07-10T08:15:00Z",
       "confirmation_close": 4107.27,
       "entry_zone_touched": true,
@@ -255,13 +255,13 @@
       ],
       "evidence_timeframe": "M15",
       "reclaim_bar_time_utc": null,
-      "retest_bar_time_utc": "2026-07-10T08:01:47Z",
+      "retest_bar_time_utc": "2026-07-10T08:07:02Z",
       "scenario_id": "E",
       "structure_stage": "INVALID_OR_CONFLICTED",
       "touch_bar_time_utc": "2026-07-10T08:00:00Z"
     }
   ],
-  "created_at_utc": "2026-07-10T08:16:47Z",
+  "created_at_utc": "2026-07-10T08:22:02Z",
   "daily_session_definition": {
     "broker_timezone": "Etc/GMT-3",
     "dst_adjusted": true,
@@ -328,7 +328,7 @@
     "s3": 3988.14,
     "session": "london",
     "session_quality_score": 0.8,
-    "snapshot_time_utc": "2026-07-10T08:16:47Z",
+    "snapshot_time_utc": "2026-07-10T08:22:02Z",
     "symbol": "XAUUSD"
   },
   "news_filter_status": {
@@ -343,7 +343,7 @@
     },
     "news_blackout_enabled": true
   },
-  "plan_id": "xauusd-20260710-081647Z",
+  "plan_id": "xauusd-20260710-082202Z",
   "post_tp1_management": {
     "enabled": true,
     "move_remaining_sl_to": "entry",
@@ -573,7 +573,7 @@
   ],
   "schema_min_ea_version": "0.3.0",
   "schema_version": "1.2",
-  "sequence_no": 202607100815,
+  "sequence_no": 202607100820,
   "session_filter_status": {
     "dst_transition_risk": false,
     "market_open_confirmed": true,
@@ -589,7 +589,7 @@
     "public_quote_age_seconds": 30,
     "quote_source": "MT5",
     "source_errors": [],
-    "source_snapshot_id": "mt5-src-20260710-081647Z",
+    "source_snapshot_id": "mt5-src-20260710-082202Z",
     "technical_source": "MT5_LOCAL_BARS"
   },
   "symbol": "XAUUSD",
@@ -868,10 +868,10 @@
     "heartbeat_required": true,
     "manifest_required": true,
     "max_transport_latency_seconds": 30,
-    "write_completed_at_utc": "2026-07-10T08:16:47Z",
+    "write_completed_at_utc": "2026-07-10T08:22:02Z",
     "writer_host": "fixture-generator"
   },
-  "valid_until_utc": "2026-07-10T08:36:47Z",
+  "valid_until_utc": "2026-07-10T08:42:02Z",
   "validator_result": "accepted_for_demo_trade",
   "validator_version": "xau-validator-0.1.0"
 }
