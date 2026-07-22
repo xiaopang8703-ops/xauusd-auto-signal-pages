@@ -2,14 +2,14 @@
 
 This generator output is a candidate packet input only. The writer owns manifest, heartbeat, Validator output, READY, and bridge files.
 
-- plan_id: `xauusd-20260722-085621Z`
-- sequence_no: `202607220855`
-- created_at_utc: `2026-07-22T08:56:21Z`
-- valid_until_utc: `2026-07-22T09:16:21Z`
+- plan_id: `xauusd-20260722-090706Z`
+- sequence_no: `202607220900`
+- created_at_utc: `2026-07-22T09:07:06Z`
+- valid_until_utc: `2026-07-22T10:07:06Z`
 - action_mode: `demo_trade`
 - validator_result: `accepted_for_demo_trade`
 - selected_scenario_id: `C`
-- current_mid: `4120.05`
+- current_mid: `4120.07`
 - session: `london`
 
 ## Pre-Live Strategy Safety
@@ -24,7 +24,7 @@ This generator output is a candidate packet input only. The writer owns manifest
 ### Public Source Confluence
 
 - enabled: `True`
-- technical_direction: `buy` confidence=`0.2`
+- technical_direction: `buy` confidence=`0.8`
 - rsi_state: `neutral` overextension_risk=`none`
 - news_alignment: `neutral_or_mixed`
 - ABCDE level-map source: `mt5_intraday_adaptive_level_map`
@@ -32,9 +32,9 @@ This generator output is a candidate packet input only. The writer owns manifest
 
 ## Scenario Ranking
 
-- A: pullback_reject buy enabled=True total=0.385507
-- B: pullback_reject buy enabled=True total=0.436314
-- C: breakout_retest_fail buy enabled=True total=0.715
+- A: pullback_reject buy enabled=True total=0.408471
+- B: pullback_reject buy enabled=True total=0.459
+- C: breakout_retest_fail buy enabled=True total=0.82
 - D: sweep_and_reclaim sell enabled=True total=0.27
 - E: breakout_retest_fail sell enabled=True total=0.57
 
@@ -49,9 +49,9 @@ This generator output is a candidate packet input only. The writer owns manifest
 
 ## Selected Trade Geometry
 
-- entry_zone: `4123.87 - 4130.49`
-- expected_fill_price: `4127.18`
-- stop_loss: `4117.91`
-- tp1/tp2/tp3: `4143.73 / 4160.28 / 4176.83`
+- entry_zone: `4129.0 - 4135.38`
+- expected_fill_price: `4132.19`
+- stop_loss: `4123.26`
+- tp1/tp2/tp3: `4148.14 / 4164.09 / 4180.04`
 
 MT5 must not parse this Markdown file as a trading instruction.
