@@ -2,15 +2,15 @@
 
 This generator output is a candidate packet input only. The writer owns manifest, heartbeat, Validator output, READY, and bridge files.
 
-- plan_id: `xauusd-20260722-115151Z`
-- sequence_no: `202607221150`
-- created_at_utc: `2026-07-22T11:51:51Z`
-- valid_until_utc: `2026-07-22T12:11:51Z`
+- plan_id: `xauusd-20260722-120736Z`
+- sequence_no: `202607221200`
+- created_at_utc: `2026-07-22T12:07:36Z`
+- valid_until_utc: `2026-07-22T13:07:36Z`
 - action_mode: `demo_trade`
 - validator_result: `accepted_for_demo_trade`
 - selected_scenario_id: `C`
-- current_mid: `4120.35`
-- session: `london`
+- current_mid: `4125.35`
+- session: `new_york_open`
 
 ## Pre-Live Strategy Safety
 
@@ -24,7 +24,7 @@ This generator output is a candidate packet input only. The writer owns manifest
 ### Public Source Confluence
 
 - enabled: `True`
-- technical_direction: `neutral` confidence=`0.1`
+- technical_direction: `buy` confidence=`0.7`
 - rsi_state: `neutral` overextension_risk=`none`
 - news_alignment: `neutral_or_mixed`
 - ABCDE level-map source: `mt5_intraday_adaptive_level_map`
@@ -32,11 +32,11 @@ This generator output is a candidate packet input only. The writer owns manifest
 
 ## Scenario Ranking
 
-- A: pullback_reject buy enabled=True total=0.377663
-- B: pullback_reject buy enabled=True total=0.428637
-- C: breakout_retest_fail buy enabled=True total=0.7075
-- D: sweep_and_reclaim sell enabled=True total=0.27
-- E: breakout_retest_fail sell enabled=True total=0.57
+- A: pullback_reject buy enabled=True total=0.40919
+- B: pullback_reject buy enabled=True total=0.460024
+- C: breakout_retest_fail buy enabled=True total=0.825
+- D: sweep_and_reclaim sell enabled=True total=0.275
+- E: breakout_retest_fail sell enabled=True total=0.575202
 
 ## ABCDE Execution Contract
 
@@ -49,9 +49,9 @@ This generator output is a candidate packet input only. The writer owns manifest
 
 ## Selected Trade Geometry
 
-- entry_zone: `4125.87 - 4132.21`
-- expected_fill_price: `4129.04`
-- stop_loss: `4120.16`
-- tp1/tp2/tp3: `4144.89 / 4160.74 / 4176.59`
+- entry_zone: `4134.0 - 4140.18`
+- expected_fill_price: `4137.09`
+- stop_loss: `4128.44`
+- tp1/tp2/tp3: `4152.54 / 4167.99 / 4183.44`
 
 MT5 must not parse this Markdown file as a trading instruction.
