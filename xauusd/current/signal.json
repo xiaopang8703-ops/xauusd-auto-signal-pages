@@ -1,6 +1,6 @@
 {
-  "action_mode": "demo_trade",
-  "auto_trading_allowed": true,
+  "action_mode": "alert_only",
+  "auto_trading_allowed": false,
   "bar_evidence": {
     "bid_ask_source": "MT5",
     "source": "mt5_local_closed_bars",
@@ -178,7 +178,7 @@
     },
     "used_for_confirmation": true
   },
-  "broker_server_time_snapshot": "2026-07-24T17:07:21Z",
+  "broker_server_time_snapshot": "2026-07-24T17:08:36Z",
   "confirmation_evidence": [
     {
       "breakout_bar_time_utc": null,
@@ -213,7 +213,7 @@
       "touch_bar_time_utc": "2026-07-24T16:45:00Z"
     },
     {
-      "breakout_bar_time_utc": "2026-07-24T16:52:21Z",
+      "breakout_bar_time_utc": "2026-07-24T16:53:36Z",
       "confirmation_bar_time_utc": "2026-07-24T17:00:00Z",
       "confirmation_close": 4067.06,
       "entry_zone_touched": true,
@@ -223,7 +223,7 @@
       ],
       "evidence_timeframe": "M15",
       "reclaim_bar_time_utc": null,
-      "retest_bar_time_utc": "2026-07-24T16:52:21Z",
+      "retest_bar_time_utc": "2026-07-24T16:53:36Z",
       "scenario_id": "C",
       "structure_stage": "CONFIRMED",
       "touch_bar_time_utc": "2026-07-24T16:45:00Z"
@@ -238,14 +238,14 @@
         "M5:2026-07-24T17:05:00Z"
       ],
       "evidence_timeframe": "M5",
-      "reclaim_bar_time_utc": "2026-07-24T17:07:21Z",
+      "reclaim_bar_time_utc": "2026-07-24T17:08:36Z",
       "retest_bar_time_utc": null,
       "scenario_id": "D",
       "structure_stage": "INVALID_OR_CONFLICTED",
       "touch_bar_time_utc": "2026-07-24T17:00:00Z"
     },
     {
-      "breakout_bar_time_utc": "2026-07-24T16:52:21Z",
+      "breakout_bar_time_utc": "2026-07-24T16:53:36Z",
       "confirmation_bar_time_utc": "2026-07-24T17:00:00Z",
       "confirmation_close": 4067.06,
       "entry_zone_touched": true,
@@ -255,13 +255,13 @@
       ],
       "evidence_timeframe": "M15",
       "reclaim_bar_time_utc": null,
-      "retest_bar_time_utc": "2026-07-24T16:52:21Z",
+      "retest_bar_time_utc": "2026-07-24T16:53:36Z",
       "scenario_id": "E",
       "structure_stage": "INVALID_OR_CONFLICTED",
       "touch_bar_time_utc": "2026-07-24T16:45:00Z"
     }
   ],
-  "created_at_utc": "2026-07-24T17:07:21Z",
+  "created_at_utc": "2026-07-24T17:08:36Z",
   "daily_session_definition": {
     "broker_timezone": "Etc/GMT-3",
     "dst_adjusted": true,
@@ -311,8 +311,8 @@
     "atr_h1_14": 12.571429,
     "atr_m15_20": 8.7735,
     "atr_m15_20_baseline": 8.7735,
-    "current_ask": 4065.66,
-    "current_bid": 4065.55,
+    "current_ask": 4065.67,
+    "current_bid": 4065.56,
     "current_mid": 4065.61,
     "daily_high": 4082.1,
     "daily_low": 4022.03,
@@ -328,7 +328,7 @@
     "s3": 3910.96,
     "session": "london_new_york_overlap",
     "session_quality_score": 0.9,
-    "snapshot_time_utc": "2026-07-24T17:07:21Z",
+    "snapshot_time_utc": "2026-07-24T17:08:36Z",
     "symbol": "XAUUSD"
   },
   "news_filter_status": {
@@ -343,7 +343,7 @@
     },
     "news_blackout_enabled": true
   },
-  "plan_id": "xauusd-20260724-170721Z",
+  "plan_id": "xauusd-20260724-170836Z",
   "post_tp1_management": {
     "enabled": true,
     "move_remaining_sl_to": "entry",
@@ -418,13 +418,13 @@
     "max_allowed_deviation_usd": 5.0,
     "max_allowed_spread": 3.0,
     "mid_deviation_usd": 0.0,
-    "mt5_ask": 4065.66,
-    "mt5_bid": 4065.55,
+    "mt5_ask": 4065.67,
+    "mt5_bid": 4065.56,
     "mt5_mid": 4065.61,
     "mt5_symbol": "XAUUSD",
     "mt5_tick_age_seconds": 1,
-    "public_ask": 4065.66,
-    "public_bid": 4065.55,
+    "public_ask": 4065.67,
+    "public_bid": 4065.56,
     "public_mid": 4065.61,
     "public_quote_age_seconds": 30,
     "public_source": "MT5",
@@ -521,7 +521,7 @@
   },
   "scenarios": [
     {
-      "action_mode": "draw_only",
+      "action_mode": "alert_only",
       "auto_trading_allowed": false,
       "direction": "buy",
       "enabled": true,
@@ -531,7 +531,7 @@
       "type": "pullback_reject"
     },
     {
-      "action_mode": "draw_only",
+      "action_mode": "alert_only",
       "auto_trading_allowed": false,
       "direction": "buy",
       "enabled": true,
@@ -541,8 +541,8 @@
       "type": "pullback_reject"
     },
     {
-      "action_mode": "demo_trade",
-      "auto_trading_allowed": true,
+      "action_mode": "alert_only",
+      "auto_trading_allowed": false,
       "direction": "buy",
       "enabled": true,
       "id": "C",
@@ -551,7 +551,7 @@
       "type": "breakout_retest_fail"
     },
     {
-      "action_mode": "draw_only",
+      "action_mode": "alert_only",
       "auto_trading_allowed": false,
       "direction": "sell",
       "enabled": true,
@@ -561,7 +561,7 @@
       "type": "sweep_and_reclaim"
     },
     {
-      "action_mode": "draw_only",
+      "action_mode": "alert_only",
       "auto_trading_allowed": false,
       "direction": "sell",
       "enabled": true,
@@ -573,7 +573,7 @@
   ],
   "schema_min_ea_version": "0.3.0",
   "schema_version": "1.2",
-  "sequence_no": 202607241700,
+  "sequence_no": 202607241705,
   "session_filter_status": {
     "dst_transition_risk": false,
     "market_open_confirmed": true,
@@ -589,7 +589,7 @@
     "public_quote_age_seconds": 30,
     "quote_source": "MT5",
     "source_errors": [],
-    "source_snapshot_id": "mt5-src-20260724-170721Z",
+    "source_snapshot_id": "mt5-src-20260724-170836Z",
     "technical_source": "MT5_LOCAL_BARS"
   },
   "symbol": "XAUUSD",
@@ -868,10 +868,10 @@
     "heartbeat_required": true,
     "manifest_required": true,
     "max_transport_latency_seconds": 30,
-    "write_completed_at_utc": "2026-07-24T17:07:21Z",
+    "write_completed_at_utc": "2026-07-24T17:08:36Z",
     "writer_host": "fixture-generator"
   },
-  "valid_until_utc": "2026-07-24T18:07:21Z",
-  "validator_result": "accepted_for_demo_trade",
+  "valid_until_utc": "2026-07-24T17:28:36Z",
+  "validator_result": "accepted_for_alert_only",
   "validator_version": "xau-validator-0.1.0"
 }
