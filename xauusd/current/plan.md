@@ -2,14 +2,14 @@
 
 This generator output is a candidate packet input only. The writer owns manifest, heartbeat, Validator output, READY, and bridge files.
 
-- plan_id: `xauusd-20260728-025736Z`
-- sequence_no: `202607280255`
-- created_at_utc: `2026-07-28T02:57:36Z`
-- valid_until_utc: `2026-07-28T03:17:36Z`
+- plan_id: `xauusd-20260728-030906Z`
+- sequence_no: `202607280300`
+- created_at_utc: `2026-07-28T03:09:06Z`
+- valid_until_utc: `2026-07-28T04:09:06Z`
 - action_mode: `demo_trade`
 - validator_result: `accepted_for_demo_trade`
 - selected_scenario_id: `A`
-- current_mid: `4041.34`
+- current_mid: `4045.36`
 - session: `asia`
 
 ## Pre-Live Strategy Safety
@@ -23,9 +23,9 @@ This generator output is a candidate packet input only. The writer owns manifest
 
 ### Public Source Confluence
 
-- enabled: `True`
-- technical_direction: `sell` confidence=`1.0`
-- rsi_state: `neutral` overextension_risk=`none`
+- enabled: `False`
+- technical_direction: `unknown` confidence=`0.0`
+- rsi_state: `unknown` overextension_risk=`none`
 - news_alignment: `neutral_or_mixed`
 - ABCDE level-map source: `mt5_intraday_adaptive_level_map`
 - score effect: emits generator-owned `scenario_adjustments`; Validator recomputes scores from emitted `public_confluence_status`; Package4 gates are unchanged.
@@ -33,10 +33,10 @@ This generator output is a candidate packet input only. The writer owns manifest
 ## Scenario Ranking
 
 - A: pullback_reject sell enabled=True total=0.721827
-- B: pullback_reject sell enabled=True total=0.621235
-- C: breakout_retest_fail sell enabled=True total=0.444421
-- D: sweep_and_reclaim buy enabled=True total=0.248195
-- E: breakout_retest_fail buy enabled=True total=0.506823
+- B: pullback_reject sell enabled=True total=0.583905
+- C: breakout_retest_fail sell enabled=True total=0.406863
+- D: sweep_and_reclaim buy enabled=True total=0.248103
+- E: breakout_retest_fail buy enabled=True total=0.507036
 
 ## ABCDE Execution Contract
 
