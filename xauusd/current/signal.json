@@ -178,7 +178,7 @@
     },
     "used_for_confirmation": true
   },
-  "broker_server_time_snapshot": "2026-07-31T23:02:13Z",
+  "broker_server_time_snapshot": "2026-07-31T23:08:58Z",
   "confirmation_evidence": [
     {
       "breakout_bar_time_utc": null,
@@ -256,7 +256,7 @@
       "touch_bar_time_utc": null
     }
   ],
-  "created_at_utc": "2026-07-31T23:02:13Z",
+  "created_at_utc": "2026-07-31T23:08:58Z",
   "daily_session_definition": {
     "broker_timezone": "Etc/GMT-3",
     "dst_adjusted": true,
@@ -323,7 +323,7 @@
     "s3": 3957.74,
     "session": "unknown",
     "session_quality_score": 0.4,
-    "snapshot_time_utc": "2026-07-31T23:02:13Z",
+    "snapshot_time_utc": "2026-07-31T23:08:58Z",
     "symbol": "XAUUSD"
   },
   "news_filter_status": {
@@ -338,7 +338,7 @@
     },
     "news_blackout_enabled": true
   },
-  "plan_id": "xauusd-20260731-230213Z",
+  "plan_id": "xauusd-20260731-230858Z",
   "post_tp1_management": {
     "enabled": true,
     "move_remaining_sl_to": "entry",
@@ -511,15 +511,15 @@
       }
     ],
     "score_gap": 0.017124,
-    "selected_scenario_id": "B",
+    "selected_scenario_id": "A",
     "selection_policy": "soft_pending_ab_runtime_arbitration",
     "selection_reason": "soft_pending_ab_trend_only_selected_by_hourly_runner",
     "suppressed_scenarios": []
   },
   "scenarios": [
     {
-      "action_mode": "draw_only",
-      "auto_trading_allowed": false,
+      "action_mode": "demo_trade",
+      "auto_trading_allowed": true,
       "direction": "sell",
       "enabled": true,
       "id": "A",
@@ -528,8 +528,8 @@
       "type": "pullback_reject"
     },
     {
-      "action_mode": "demo_trade",
-      "auto_trading_allowed": true,
+      "action_mode": "draw_only",
+      "auto_trading_allowed": false,
       "direction": "sell",
       "enabled": true,
       "id": "B",
@@ -570,7 +570,7 @@
   ],
   "schema_min_ea_version": "0.3.0",
   "schema_version": "1.2",
-  "sequence_no": 202607312300,
+  "sequence_no": 202607312305,
   "session_filter_status": {
     "dst_transition_risk": false,
     "market_open_confirmed": true,
@@ -586,7 +586,7 @@
     "public_quote_age_seconds": 30,
     "quote_source": "MT5",
     "source_errors": [],
-    "source_snapshot_id": "mt5-src-20260731-230213Z",
+    "source_snapshot_id": "mt5-src-20260731-230858Z",
     "technical_source": "MT5_LOCAL_BARS"
   },
   "symbol": "XAUUSD",
@@ -865,10 +865,10 @@
     "heartbeat_required": true,
     "manifest_required": true,
     "max_transport_latency_seconds": 30,
-    "write_completed_at_utc": "2026-07-31T23:02:13Z",
+    "write_completed_at_utc": "2026-07-31T23:08:58Z",
     "writer_host": "fixture-generator"
   },
-  "valid_until_utc": "2026-08-01T00:02:13Z",
+  "valid_until_utc": "2026-07-31T23:28:58Z",
   "validator_result": "accepted_for_demo_trade",
   "validator_version": "xau-validator-0.1.0"
 }
