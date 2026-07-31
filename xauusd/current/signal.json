@@ -178,7 +178,7 @@
     },
     "used_for_confirmation": true
   },
-  "broker_server_time_snapshot": "2026-07-31T21:54:43Z",
+  "broker_server_time_snapshot": "2026-07-31T22:02:43Z",
   "confirmation_evidence": [
     {
       "breakout_bar_time_utc": null,
@@ -256,7 +256,7 @@
       "touch_bar_time_utc": null
     }
   ],
-  "created_at_utc": "2026-07-31T21:54:43Z",
+  "created_at_utc": "2026-07-31T22:02:43Z",
   "daily_session_definition": {
     "broker_timezone": "Etc/GMT-3",
     "dst_adjusted": true,
@@ -323,7 +323,7 @@
     "s3": 3957.74,
     "session": "unknown",
     "session_quality_score": 0.4,
-    "snapshot_time_utc": "2026-07-31T21:54:43Z",
+    "snapshot_time_utc": "2026-07-31T22:02:43Z",
     "symbol": "XAUUSD"
   },
   "news_filter_status": {
@@ -338,7 +338,7 @@
     },
     "news_blackout_enabled": true
   },
-  "plan_id": "xauusd-20260731-215443Z",
+  "plan_id": "xauusd-20260731-220243Z",
   "post_tp1_management": {
     "enabled": true,
     "move_remaining_sl_to": "entry",
@@ -347,7 +347,7 @@
   },
   "prompt_version": "xauusd-codex-hourly-snapshot-0.1",
   "public_confluence_status": {
-    "adx_14": 56.727152,
+    "adx_14": 56.913087,
     "adx_state": "strong_trend",
     "enabled": true,
     "news_alignment": "neutral_or_mixed",
@@ -361,41 +361,51 @@
       "mt5_intraday_adaptive_level_map_used_for_abcde_geometry"
     ],
     "overextension_risk": "none",
-    "rsi_14": 45.327023,
+    "rsi_14": 41.493865,
     "rsi_state": "neutral",
     "scenario_adjustments": {
       "A": {
-        "direction_alignment": "neutral",
-        "notes": [],
-        "structure_stage_delta": 0.0
+        "direction_alignment": "aligned",
+        "notes": [
+          "public_technical_bias_aligned"
+        ],
+        "structure_stage_delta": 0.075
       },
       "B": {
-        "direction_alignment": "neutral",
-        "notes": [],
-        "structure_stage_delta": 0.0
+        "direction_alignment": "aligned",
+        "notes": [
+          "public_technical_bias_aligned"
+        ],
+        "structure_stage_delta": 0.075
       },
       "C": {
-        "direction_alignment": "neutral",
-        "notes": [],
-        "structure_stage_delta": 0.0
+        "direction_alignment": "aligned",
+        "notes": [
+          "public_technical_bias_aligned"
+        ],
+        "structure_stage_delta": 0.075
       },
       "D": {
-        "direction_alignment": "neutral",
-        "notes": [],
-        "structure_stage_delta": 0.0
+        "direction_alignment": "conflicts",
+        "notes": [
+          "public_technical_bias_conflicts"
+        ],
+        "structure_stage_delta": -0.175
       },
       "E": {
-        "direction_alignment": "neutral",
-        "notes": [],
-        "structure_stage_delta": 0.0
+        "direction_alignment": "conflicts",
+        "notes": [
+          "public_technical_bias_conflicts"
+        ],
+        "structure_stage_delta": -0.175
       }
     },
     "source": "yahoo_finance_gc_f_public_technical_proxy",
-    "stoch_rsi": 62.97347,
-    "technical_confidence": 0.1,
-    "technical_direction": "neutral",
+    "stoch_rsi": 0.0,
+    "technical_confidence": 0.5,
+    "technical_direction": "sell",
     "technical_inputs": {
-      "summary_15m": "buy",
+      "summary_15m": "sell",
       "summary_1h": "sell"
     }
   },
@@ -469,8 +479,8 @@
         "news_alignment_score": 0.09,
         "rr_score": 0.239184,
         "spread_atr_score": 0.04,
-        "structure_score": 0.1375,
-        "total": 0.706684
+        "structure_score": 0.15625,
+        "total": 0.725434
       },
       {
         "distance_score": 0.10018,
@@ -478,8 +488,8 @@
         "news_alignment_score": 0.09,
         "rr_score": 0.162197,
         "spread_atr_score": 0.04,
-        "structure_score": 0.1375,
-        "total": 0.529877
+        "structure_score": 0.15625,
+        "total": 0.548627
       },
       {
         "distance_score": 0.099797,
@@ -487,8 +497,8 @@
         "news_alignment_score": 0.09,
         "rr_score": 0.00304,
         "spread_atr_score": 0.04,
-        "structure_score": 0.1375,
-        "total": 0.370337
+        "structure_score": 0.09375,
+        "total": 0.326587
       },
       {
         "distance_score": 0.100135,
@@ -496,20 +506,20 @@
         "news_alignment_score": 0.09,
         "rr_score": 0.261749,
         "spread_atr_score": 0.04,
-        "structure_score": 0.1375,
-        "total": 0.629384
+        "structure_score": 0.09375,
+        "total": 0.585634
       }
     ],
-    "score_gap": 0.001626,
-    "selected_scenario_id": "A",
+    "score_gap": 0.017124,
+    "selected_scenario_id": "B",
     "selection_policy": "soft_pending_ab_runtime_arbitration",
     "selection_reason": "soft_pending_ab_trend_only_selected_by_hourly_runner",
     "suppressed_scenarios": []
   },
   "scenarios": [
     {
-      "action_mode": "demo_trade",
-      "auto_trading_allowed": true,
+      "action_mode": "draw_only",
+      "auto_trading_allowed": false,
       "direction": "sell",
       "enabled": true,
       "id": "A",
@@ -518,8 +528,8 @@
       "type": "pullback_reject"
     },
     {
-      "action_mode": "draw_only",
-      "auto_trading_allowed": false,
+      "action_mode": "demo_trade",
+      "auto_trading_allowed": true,
       "direction": "sell",
       "enabled": true,
       "id": "B",
@@ -560,7 +570,7 @@
   ],
   "schema_min_ea_version": "0.3.0",
   "schema_version": "1.2",
-  "sequence_no": 202607312150,
+  "sequence_no": 202607312200,
   "session_filter_status": {
     "dst_transition_risk": false,
     "market_open_confirmed": true,
@@ -576,7 +586,7 @@
     "public_quote_age_seconds": 30,
     "quote_source": "MT5",
     "source_errors": [],
-    "source_snapshot_id": "mt5-src-20260731-215443Z",
+    "source_snapshot_id": "mt5-src-20260731-220243Z",
     "technical_source": "MT5_LOCAL_BARS"
   },
   "symbol": "XAUUSD",
@@ -855,10 +865,10 @@
     "heartbeat_required": true,
     "manifest_required": true,
     "max_transport_latency_seconds": 30,
-    "write_completed_at_utc": "2026-07-31T21:54:43Z",
+    "write_completed_at_utc": "2026-07-31T22:02:43Z",
     "writer_host": "fixture-generator"
   },
-  "valid_until_utc": "2026-07-31T22:14:43Z",
+  "valid_until_utc": "2026-07-31T23:02:43Z",
   "validator_result": "accepted_for_demo_trade",
   "validator_version": "xau-validator-0.1.0"
 }
