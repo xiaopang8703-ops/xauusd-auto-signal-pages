@@ -2,14 +2,14 @@
 
 This generator output is a candidate packet input only. The writer owns manifest, heartbeat, Validator output, READY, and bridge files.
 
-- plan_id: `xauusd-20260806-233841Z`
-- sequence_no: `202608062335`
-- created_at_utc: `2026-08-06T23:38:41Z`
-- valid_until_utc: `2026-08-06T23:58:41Z`
+- plan_id: `xauusd-20260806-235441Z`
+- sequence_no: `202608062350`
+- created_at_utc: `2026-08-06T23:54:41Z`
+- valid_until_utc: `2026-08-07T00:14:41Z`
 - action_mode: `demo_trade`
 - validator_result: `accepted_for_demo_trade`
 - selected_scenario_id: `A`
-- current_mid: `4247.64`
+- current_mid: `4251.83`
 - session: `unknown`
 
 ## Pre-Live Strategy Safety
@@ -33,10 +33,10 @@ This generator output is a candidate packet input only. The writer owns manifest
 ## Scenario Ranking
 
 - A: pullback_reject sell enabled=True total=0.637997
-- B: pullback_reject sell enabled=True total=0.74401
-- C: breakout_retest_fail sell enabled=True total=0.567457
-- D: sweep_and_reclaim buy enabled=True total=0.283035
-- E: breakout_retest_fail buy enabled=True total=0.542269
+- B: pullback_reject sell enabled=True total=0.744194
+- C: breakout_retest_fail sell enabled=True total=0.642495
+- D: sweep_and_reclaim buy enabled=True total=0.358018
+- E: breakout_retest_fail buy enabled=True total=0.542894
 
 ## ABCDE Execution Contract
 
