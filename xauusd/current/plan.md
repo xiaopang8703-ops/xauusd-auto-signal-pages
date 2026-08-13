@@ -2,14 +2,14 @@
 
 This generator output is a candidate packet input only. The writer owns manifest, heartbeat, Validator output, READY, and bridge files.
 
-- plan_id: `xauusd-20260813-040737Z`
-- sequence_no: `202608130400`
-- created_at_utc: `2026-08-13T04:07:37Z`
-- valid_until_utc: `2026-08-13T05:07:37Z`
+- plan_id: `xauusd-20260813-040922Z`
+- sequence_no: `202608130405`
+- created_at_utc: `2026-08-13T04:09:22Z`
+- valid_until_utc: `2026-08-13T04:29:22Z`
 - action_mode: `demo_trade`
 - validator_result: `accepted_for_demo_trade`
-- selected_scenario_id: `B`
-- current_mid: `4396.62`
+- selected_scenario_id: `A`
+- current_mid: `4396.2`
 - session: `asia`
 
 ## Pre-Live Strategy Safety
@@ -49,9 +49,9 @@ This generator output is a candidate packet input only. The writer owns manifest
 
 ## Selected Trade Geometry
 
-- entry_zone: `4438.59 - 4450.58`
-- expected_fill_price: `4444.59`
-- stop_loss: `4464.97`
-- tp1/tp2/tp3: `4414.61 / 4396.62 / 4380.63`
+- entry_zone: `4404.62 - 4414.61`
+- expected_fill_price: `4409.61`
+- stop_loss: `4427.6`
+- tp1/tp2/tp3: `4388.62 / 4380.63 / 4371.63`
 
 MT5 must not parse this Markdown file as a trading instruction.
