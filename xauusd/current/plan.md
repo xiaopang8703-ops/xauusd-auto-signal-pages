@@ -2,14 +2,14 @@
 
 This generator output is a candidate packet input only. The writer owns manifest, heartbeat, Validator output, READY, and bridge files.
 
-- plan_id: `xauusd-20260821-151014Z`
-- sequence_no: `202608211510`
-- created_at_utc: `2026-08-21T15:10:14Z`
-- valid_until_utc: `2026-08-21T15:30:14Z`
+- plan_id: `xauusd-20260821-153029Z`
+- sequence_no: `202608211530`
+- created_at_utc: `2026-08-21T15:30:29Z`
+- valid_until_utc: `2026-08-21T15:50:29Z`
 - action_mode: `alert_only`
 - validator_result: `accepted_for_alert_only`
 - selected_scenario_id: `B`
-- current_mid: `4595.51`
+- current_mid: `4601.77`
 - session: `new_york_open`
 
 ## Pre-Live Strategy Safety
@@ -32,11 +32,11 @@ This generator output is a candidate packet input only. The writer owns manifest
 
 ## Scenario Ranking
 
-- A: pullback_reject buy enabled=True total=0.639632
-- B: pullback_reject buy enabled=True total=0.693985
+- A: pullback_reject buy enabled=True total=0.639649
+- B: pullback_reject buy enabled=True total=0.694275
 - C: breakout_retest_fail buy enabled=True total=0.749919
 - D: sweep_and_reclaim sell enabled=True total=0.325
-- E: breakout_retest_fail sell enabled=True total=0.7
+- E: breakout_retest_fail sell enabled=True total=0.700101
 
 ## ABCDE Execution Contract
 
@@ -49,9 +49,9 @@ This generator output is a candidate packet input only. The writer owns manifest
 
 ## Selected Trade Geometry
 
-- entry_zone: `4573.4 - 4583.22`
-- expected_fill_price: `4578.31`
-- stop_loss: `4557.65`
-- tp1/tp2/tp3: `4593.05 / 4612.71 / 4625.0`
+- entry_zone: `4579.51 - 4589.4`
+- expected_fill_price: `4584.45`
+- stop_loss: `4563.67`
+- tp1/tp2/tp3: `4599.3 / 4619.08 / 4631.45`
 
 MT5 must not parse this Markdown file as a trading instruction.
