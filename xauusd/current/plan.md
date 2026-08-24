@@ -2,14 +2,14 @@
 
 This generator output is a candidate packet input only. The writer owns manifest, heartbeat, Validator output, READY, and bridge files.
 
-- plan_id: `xauusd-20260824-080055Z`
+- plan_id: `xauusd-20260824-080610Z`
 - sequence_no: `202608240800`
-- created_at_utc: `2026-08-24T08:00:55Z`
-- valid_until_utc: `2026-08-24T09:00:55Z`
+- created_at_utc: `2026-08-24T08:06:10Z`
+- valid_until_utc: `2026-08-24T09:06:10Z`
 - action_mode: `demo_trade`
 - validator_result: `accepted_for_demo_trade`
 - selected_scenario_id: `B`
-- current_mid: `4640.69`
+- current_mid: `4639.59`
 - session: `london`
 
 ## Pre-Live Strategy Safety
@@ -24,7 +24,7 @@ This generator output is a candidate packet input only. The writer owns manifest
 ### Public Source Confluence
 
 - enabled: `True`
-- technical_direction: `buy` confidence=`0.4`
+- technical_direction: `buy` confidence=`0.8`
 - rsi_state: `neutral` overextension_risk=`none`
 - news_alignment: `neutral_or_mixed`
 - ABCDE level-map source: `mt5_intraday_adaptive_level_map`
@@ -32,11 +32,11 @@ This generator output is a candidate packet input only. The writer owns manifest
 
 ## Scenario Ranking
 
-- A: pullback_reject buy enabled=True total=0.610613
+- A: pullback_reject buy enabled=True total=0.633113
 - B: pullback_reject buy enabled=True total=0.687949
-- C: breakout_retest_fail buy enabled=True total=0.7225
-- D: sweep_and_reclaim sell enabled=True total=0.3725
-- E: breakout_retest_fail sell enabled=True total=0.7475
+- C: breakout_retest_fail buy enabled=True total=0.8125
+- D: sweep_and_reclaim sell enabled=True total=0.3375
+- E: breakout_retest_fail sell enabled=True total=0.6375
 
 ## ABCDE Execution Contract
 
@@ -49,9 +49,9 @@ This generator output is a candidate packet input only. The writer owns manifest
 
 ## Selected Trade Geometry
 
-- entry_zone: `4628.85 - 4637.89`
-- expected_fill_price: `4633.37`
-- stop_loss: `4614.28`
-- tp1/tp2/tp3: `4646.93 / 4665.01 / 4676.32`
+- entry_zone: `4627.21 - 4636.25`
+- expected_fill_price: `4631.73`
+- stop_loss: `4612.64`
+- tp1/tp2/tp3: `4645.29 / 4663.37 / 4674.68`
 
 MT5 must not parse this Markdown file as a trading instruction.
