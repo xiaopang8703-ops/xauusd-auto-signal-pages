@@ -2,10 +2,10 @@
 
 This generator output is a candidate packet input only. The writer owns manifest, heartbeat, Validator output, READY, and bridge files.
 
-- plan_id: `xauusd-20260910-210333Z`
+- plan_id: `xauusd-20260910-210603Z`
 - sequence_no: `202609102100`
-- created_at_utc: `2026-09-10T21:03:33Z`
-- valid_until_utc: `2026-09-10T22:03:33Z`
+- created_at_utc: `2026-09-10T21:06:03Z`
+- valid_until_utc: `2026-09-10T22:06:03Z`
 - action_mode: `demo_trade`
 - validator_result: `accepted_for_demo_trade`
 - selected_scenario_id: `A`
@@ -25,18 +25,18 @@ This generator output is a candidate packet input only. The writer owns manifest
 
 - enabled: `True`
 - technical_direction: `sell` confidence=`1.0`
-- rsi_state: `extreme_oversold` overextension_risk=`high`
+- rsi_state: `neutral` overextension_risk=`none`
 - news_alignment: `neutral_or_mixed`
 - ABCDE level-map source: `mt5_intraday_adaptive_level_map`
 - score effect: emits generator-owned `scenario_adjustments`; Validator recomputes scores from emitted `public_confluence_status`; Package4 gates are unchanged.
 
 ## Scenario Ranking
 
-- A: pullback_reject sell enabled=True total=0.681973
+- A: pullback_reject sell enabled=True total=0.644473
 - B: pullback_reject sell enabled=True total=0.743952
-- C: breakout_retest_fail sell enabled=True total=0.492544
-- D: sweep_and_reclaim buy enabled=True total=0.312913
-- E: breakout_retest_fail buy enabled=True total=0.572416
+- C: breakout_retest_fail sell enabled=True total=0.567544
+- D: sweep_and_reclaim buy enabled=True total=0.282913
+- E: breakout_retest_fail buy enabled=True total=0.542416
 
 ## ABCDE Execution Contract
 
@@ -49,9 +49,9 @@ This generator output is a candidate packet input only. The writer owns manifest
 
 ## Selected Trade Geometry
 
-- entry_zone: `4325.36 - 4336.05`
-- expected_fill_price: `4330.7`
-- stop_loss: `4349.87`
-- tp1/tp2/tp3: `4308.26 / 4299.71 / 4290.09`
+- entry_zone: `4329.44 - 4340.13`
+- expected_fill_price: `4334.78`
+- stop_loss: `4353.95`
+- tp1/tp2/tp3: `4312.34 / 4303.79 / 4294.17`
 
 MT5 must not parse this Markdown file as a trading instruction.
