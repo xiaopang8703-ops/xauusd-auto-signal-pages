@@ -2,14 +2,14 @@
 
 This generator output is a candidate packet input only. The writer owns manifest, heartbeat, Validator output, READY, and bridge files.
 
-- plan_id: `xauusd-20260914-004708Z`
+- plan_id: `xauusd-20260914-005253Z`
 - sequence_no: `202609140000`
-- created_at_utc: `2026-09-14T00:47:08Z`
-- valid_until_utc: `2026-09-14T01:47:08Z`
+- created_at_utc: `2026-09-14T00:52:53Z`
+- valid_until_utc: `2026-09-14T01:52:53Z`
 - action_mode: `demo_trade`
 - validator_result: `accepted_for_demo_trade`
-- selected_scenario_id: `B`
-- current_mid: `4339.16`
+- selected_scenario_id: `A`
+- current_mid: `4341.73`
 - session: `asia`
 
 ## Pre-Live Strategy Safety
@@ -23,7 +23,7 @@ This generator output is a candidate packet input only. The writer owns manifest
 
 ### Public Source Confluence
 
-- enabled: `False`
+- enabled: `True`
 - technical_direction: `unknown` confidence=`0.0`
 - rsi_state: `unknown` overextension_risk=`none`
 - news_alignment: `neutral_or_mixed`
@@ -32,10 +32,10 @@ This generator output is a candidate packet input only. The writer owns manifest
 
 ## Scenario Ranking
 
-- A: pullback_reject sell enabled=True total=0.734094
+- A: pullback_reject sell enabled=True total=0.621308
 - B: pullback_reject sell enabled=True total=0.721376
-- C: breakout_retest_fail sell enabled=True total=0.544911
-- D: sweep_and_reclaim buy enabled=True total=0.385475
+- C: breakout_retest_fail sell enabled=True total=0.544965
+- D: sweep_and_reclaim buy enabled=True total=0.460475
 - E: breakout_retest_fail buy enabled=True total=0.644915
 
 ## ABCDE Execution Contract
@@ -49,9 +49,9 @@ This generator output is a candidate packet input only. The writer owns manifest
 
 ## Selected Trade Geometry
 
-- entry_zone: `4382.7 - 4395.14`
-- expected_fill_price: `4388.92`
-- stop_loss: `4410.07`
-- tp1/tp2/tp3: `4357.82 / 4339.16 / 4322.58`
+- entry_zone: `4350.02 - 4360.39`
+- expected_fill_price: `4355.2`
+- stop_loss: `4373.83`
+- tp1/tp2/tp3: `4333.44 / 4325.15 / 4315.82`
 
 MT5 must not parse this Markdown file as a trading instruction.
