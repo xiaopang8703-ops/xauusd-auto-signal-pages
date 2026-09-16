@@ -77,14 +77,6 @@
       "M5": {
         "closed_bars": [
           {
-            "close": 4250.6,
-            "high": 4273.39,
-            "low": 4249.91,
-            "open": 4273.39,
-            "tick_volume": 4959,
-            "time_utc": "2026-09-16T19:10:00Z"
-          },
-          {
             "close": 4252.81,
             "high": 4253.36,
             "low": 4235.16,
@@ -171,14 +163,22 @@
             "open": 4272.31,
             "tick_volume": 2033,
             "time_utc": "2026-09-16T20:05:00Z"
+          },
+          {
+            "close": 4267.38,
+            "high": 4271.94,
+            "low": 4265.96,
+            "open": 4270.6,
+            "tick_volume": 1675,
+            "time_utc": "2026-09-16T20:10:00Z"
           }
         ],
-        "last_closed_bar_time_utc": "2026-09-16T20:05:00Z"
+        "last_closed_bar_time_utc": "2026-09-16T20:10:00Z"
       }
     },
     "used_for_confirmation": true
   },
-  "broker_server_time_snapshot": "2026-09-16T20:08:38Z",
+  "broker_server_time_snapshot": "2026-09-16T20:10:23Z",
   "confirmation_evidence": [
     {
       "breakout_bar_time_utc": null,
@@ -216,7 +216,7 @@
       "confirmation_close": 4272.27,
       "entry_zone_touched": true,
       "evidence_bar_ids": [
-        "M15:2026-09-16T19:30:00Z",
+        "M15:2026-09-16T19:15:00Z",
         "M15:2026-09-16T20:00:00Z"
       ],
       "evidence_timeframe": "M15",
@@ -224,15 +224,15 @@
       "retest_bar_time_utc": null,
       "scenario_id": "C",
       "structure_stage": "WAIT_CONFIRMATION",
-      "touch_bar_time_utc": "2026-09-16T19:30:00Z"
+      "touch_bar_time_utc": "2026-09-16T19:15:00Z"
     },
     {
       "breakout_bar_time_utc": null,
-      "confirmation_bar_time_utc": "2026-09-16T20:05:00Z",
-      "confirmation_close": 4270.6,
+      "confirmation_bar_time_utc": "2026-09-16T20:10:00Z",
+      "confirmation_close": 4267.38,
       "entry_zone_touched": false,
       "evidence_bar_ids": [
-        "M5:2026-09-16T20:05:00Z"
+        "M5:2026-09-16T20:10:00Z"
       ],
       "evidence_timeframe": "M5",
       "reclaim_bar_time_utc": null,
@@ -257,7 +257,7 @@
       "touch_bar_time_utc": null
     }
   ],
-  "created_at_utc": "2026-09-16T20:08:38Z",
+  "created_at_utc": "2026-09-16T20:10:23Z",
   "daily_session_definition": {
     "broker_timezone": "Etc/GMT-3",
     "dst_adjusted": true,
@@ -307,9 +307,9 @@
     "atr_h1_14": 25.472143,
     "atr_m15_20": 19.581,
     "atr_m15_20_baseline": 19.581,
-    "current_ask": 4268.67,
-    "current_bid": 4268.57,
-    "current_mid": 4268.62,
+    "current_ask": 4266.12,
+    "current_bid": 4266.02,
+    "current_mid": 4266.07,
     "daily_high": 4368.16,
     "daily_low": 4235.16,
     "daily_open": 4284.66,
@@ -324,7 +324,7 @@
     "s3": 4202.2,
     "session": "late_new_york",
     "session_quality_score": 0.65,
-    "snapshot_time_utc": "2026-09-16T20:08:38Z",
+    "snapshot_time_utc": "2026-09-16T20:10:23Z",
     "symbol": "XAUUSD"
   },
   "news_filter_status": {
@@ -339,7 +339,7 @@
     },
     "news_blackout_enabled": true
   },
-  "plan_id": "xauusd-20260916-200838Z",
+  "plan_id": "xauusd-20260916-201023Z",
   "post_tp1_management": {
     "enabled": true,
     "move_remaining_sl_to": "entry",
@@ -414,14 +414,14 @@
     "max_allowed_deviation_usd": 5.0,
     "max_allowed_spread": 3.0,
     "mid_deviation_usd": 0.0,
-    "mt5_ask": 4268.67,
-    "mt5_bid": 4268.57,
-    "mt5_mid": 4268.62,
+    "mt5_ask": 4266.12,
+    "mt5_bid": 4266.02,
+    "mt5_mid": 4266.07,
     "mt5_symbol": "XAUUSD",
     "mt5_tick_age_seconds": 1,
-    "public_ask": 4268.67,
-    "public_bid": 4268.57,
-    "public_mid": 4268.62,
+    "public_ask": 4266.12,
+    "public_bid": 4266.02,
+    "public_mid": 4266.07,
     "public_quote_age_seconds": 30,
     "public_source": "MT5",
     "spread_at_generation": 0.1,
@@ -571,7 +571,7 @@
   ],
   "schema_min_ea_version": "0.3.0",
   "schema_version": "1.2",
-  "sequence_no": 202609162000,
+  "sequence_no": 202609162010,
   "session_filter_status": {
     "dst_transition_risk": false,
     "market_open_confirmed": true,
@@ -587,7 +587,7 @@
     "public_quote_age_seconds": 30,
     "quote_source": "MT5",
     "source_errors": [],
-    "source_snapshot_id": "mt5-src-20260916-200838Z",
+    "source_snapshot_id": "mt5-src-20260916-201023Z",
     "technical_source": "MT5_LOCAL_BARS"
   },
   "symbol": "XAUUSD",
@@ -647,111 +647,111 @@
     },
     {
       "confirmation": {
-        "confirm_close_beyond_level": 4355.02,
+        "confirm_close_beyond_level": 4352.47,
         "confirm_with_closed_bar_only": true,
         "max_bars_after_zone_touch": 4,
         "max_closes_beyond_zone": 0,
         "max_distance": 10.8,
         "max_entry_distance_from_confirm": 10.8,
         "must_touch_entry_zone_before_confirmation": true,
-        "reclaim_level": 4355.02,
+        "reclaim_level": 4352.47,
         "rule_id": "PULLBACK_FAIL_REJECT",
         "timeframe": "M15",
         "zone_touch_method": "high_low_touch"
       },
       "direction": "sell",
       "entry_execution": {
-        "expected_fill_price": 4355.02,
+        "expected_fill_price": 4352.47,
         "expected_fill_price_side": "bid",
         "mode": "market_after_confirmation",
         "order_type": "market"
       },
       "entry_zone": {
-        "high": 4365.82,
-        "low": 4344.22
+        "high": 4363.27,
+        "low": 4341.67
       },
       "id": "B",
       "orders": [
         {
           "leg": "tp1",
           "lot": 0.01,
-          "stop_loss": 4391.74,
-          "take_profit": 4301.02
+          "stop_loss": 4389.19,
+          "take_profit": 4298.47
         },
         {
           "leg": "tp2",
           "lot": 0.01,
-          "stop_loss": 4391.74,
-          "take_profit": 4268.62
+          "stop_loss": 4389.19,
+          "take_profit": 4266.07
         },
         {
           "leg": "tp3",
           "lot": 0.01,
-          "stop_loss": 4391.74,
-          "take_profit": 4239.82
+          "stop_loss": 4389.19,
+          "take_profit": 4237.27
         }
       ],
       "scoring_inputs": {
-        "expected_fill_price": 4355.02,
+        "expected_fill_price": 4352.47,
         "expected_fill_price_side": "bid",
         "max_distance": 10.8,
-        "reference_level": 4355.02
+        "reference_level": 4352.47
       }
     },
     {
       "confirmation": {
         "atr_multiplier": 0.2,
-        "breakout_level": 4223.62,
+        "breakout_level": 4221.07,
         "close_beyond_level_required": true,
         "confirm_with_closed_bar_only": true,
         "max_distance": 16.2,
         "max_retest_bars": 4,
         "min_break_distance_usd": 1.0,
-        "must_close_back_level": 4223.62,
+        "must_close_back_level": 4221.07,
         "retest_zone": {
-          "high": 4239.82,
-          "low": 4223.62
+          "high": 4237.27,
+          "low": 4221.07
         },
         "rule_id": "BREAKOUT_RETEST_FAIL",
         "timeframe": "M15"
       },
       "direction": "sell",
       "entry_execution": {
-        "expected_fill_price": 4231.72,
+        "expected_fill_price": 4229.17,
         "expected_fill_price_side": "bid",
         "mode": "market_after_confirmation",
         "order_type": "market"
       },
       "entry_zone": {
-        "high": 4239.82,
-        "low": 4223.62
+        "high": 4237.27,
+        "low": 4221.07
       },
       "id": "C",
       "orders": [
         {
           "leg": "tp1",
           "lot": 0.01,
-          "stop_loss": 4254.22,
-          "take_profit": 4207.42
+          "stop_loss": 4251.67,
+          "take_profit": 4204.87
         },
         {
           "leg": "tp2",
           "lot": 0.01,
-          "stop_loss": 4254.22,
-          "take_profit": 4183.12
+          "stop_loss": 4251.67,
+          "take_profit": 4180.57
         },
         {
           "leg": "tp3",
           "lot": 0.01,
-          "stop_loss": 4254.22,
-          "take_profit": 4126.42
+          "stop_loss": 4251.67,
+          "take_profit": 4123.87
         }
       ],
       "scoring_inputs": {
-        "expected_fill_price": 4231.72,
+        "expected_fill_price": 4229.17,
         "expected_fill_price_side": "bid",
         "max_distance": 16.2,
-        "reference_level": 4223.62
+        "reference_level": 4221.07
       }
     },
     {
@@ -761,104 +761,104 @@
         "max_distance": 14.4,
         "max_reclaim_bars": 3,
         "min_sweep_distance": 1.5,
-        "reclaim_level": 4254.22,
+        "reclaim_level": 4251.67,
         "rule_id": "SWEEP_AND_RECLAIM",
-        "sweep_level": 4223.62,
+        "sweep_level": 4221.07,
         "timeframe": "M5"
       },
       "direction": "buy",
       "entry_execution": {
-        "expected_fill_price": 4247.02,
+        "expected_fill_price": 4244.47,
         "expected_fill_price_side": "ask",
         "mode": "market_after_confirmation",
         "order_type": "market"
       },
       "entry_zone": {
-        "high": 4254.22,
-        "low": 4239.82
+        "high": 4251.67,
+        "low": 4237.27
       },
       "id": "D",
       "orders": [
         {
           "leg": "tp1",
           "lot": 0.01,
-          "stop_loss": 4210.66,
-          "take_profit": 4268.62
+          "stop_loss": 4208.11,
+          "take_profit": 4266.07
         },
         {
           "leg": "tp2",
           "lot": 0.01,
-          "stop_loss": 4210.66,
-          "take_profit": 4283.02
+          "stop_loss": 4208.11,
+          "take_profit": 4280.47
         },
         {
           "leg": "tp3",
           "lot": 0.01,
-          "stop_loss": 4210.66,
-          "take_profit": 4322.62
+          "stop_loss": 4208.11,
+          "take_profit": 4320.07
         }
       ],
       "scoring_inputs": {
-        "expected_fill_price": 4247.02,
+        "expected_fill_price": 4244.47,
         "expected_fill_price_side": "ask",
         "max_distance": 14.4,
-        "reference_level": 4254.22
+        "reference_level": 4251.67
       }
     },
     {
       "confirmation": {
         "atr_multiplier": 0.2,
-        "breakout_level": 4322.62,
+        "breakout_level": 4320.07,
         "close_beyond_level_required": true,
         "confirm_with_closed_bar_only": true,
         "max_distance": 21.6,
         "max_retest_bars": 4,
         "min_break_distance_usd": 1.0,
-        "must_close_back_level": 4322.62,
+        "must_close_back_level": 4320.07,
         "retest_zone": {
-          "high": 4322.62,
-          "low": 4301.02
+          "high": 4320.07,
+          "low": 4298.47
         },
         "rule_id": "BREAKOUT_RETEST_FAIL",
         "timeframe": "M15"
       },
       "direction": "buy",
       "entry_execution": {
-        "expected_fill_price": 4311.82,
+        "expected_fill_price": 4309.27,
         "expected_fill_price_side": "ask",
         "mode": "market_after_confirmation",
         "order_type": "market"
       },
       "entry_zone": {
-        "high": 4322.62,
-        "low": 4301.02
+        "high": 4320.07,
+        "low": 4298.47
       },
       "id": "E",
       "orders": [
         {
           "leg": "tp1",
           "lot": 0.01,
-          "stop_loss": 4283.02,
-          "take_profit": 4355.02
+          "stop_loss": 4280.47,
+          "take_profit": 4352.47
         },
         {
           "leg": "tp2",
           "lot": 0.01,
-          "stop_loss": 4283.02,
-          "take_profit": 4387.42
+          "stop_loss": 4280.47,
+          "take_profit": 4384.87
         },
         {
           "leg": "tp3",
           "lot": 0.01,
-          "stop_loss": 4283.02,
-          "take_profit": 4430.62
+          "stop_loss": 4280.47,
+          "take_profit": 4428.07
         }
       ],
       "scoring_inputs": {
-        "expected_fill_price": 4311.82,
+        "expected_fill_price": 4309.27,
         "expected_fill_price_side": "ask",
         "max_distance": 21.6,
-        "reference_level": 4322.62
+        "reference_level": 4320.07
       }
     }
   ],
@@ -866,10 +866,10 @@
     "heartbeat_required": true,
     "manifest_required": true,
     "max_transport_latency_seconds": 30,
-    "write_completed_at_utc": "2026-09-16T20:08:38Z",
+    "write_completed_at_utc": "2026-09-16T20:10:23Z",
     "writer_host": "fixture-generator"
   },
-  "valid_until_utc": "2026-09-16T21:08:38Z",
+  "valid_until_utc": "2026-09-16T20:30:23Z",
   "validator_result": "accepted_for_demo_trade",
   "validator_version": "xau-validator-0.1.0"
 }
