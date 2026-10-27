@@ -1,0 +1,360 @@
+{
+  "status": "analysis_completed",
+  "authority": "none",
+  "model": "gpt-5.6-sol",
+  "completed_at_utc": "2026-10-27T06:11:48.078669+00:00",
+  "prompt_sha256": "sha256:c22e2f75e4ce88c8db9858d9cd654b0ca8692bc6f953067cb42d17ffa541294f",
+  "implementation_sha256": {
+    "run_gpt56_hourly_analysis.py": "sha256:a16aa2e93b9cb7d10ba7f2470a3a9e95895d7b2a82bbe8520abc441bb3537f10",
+    "run_gpt56_shadow_child.py": "sha256:f1b9bb9febdce8d59e8b7e72126981f6f29c0635ce5e9d3f47e2546dd0513779",
+    "build_gpt56_hourly_support_prompt.py": "sha256:366306c4d381a14c6308ab93d3026eb8b60fda6f6b81249c6175cf018c4bed10"
+  },
+  "reasoning_effort": "medium",
+  "framework": "xauusd-package4-llm-research-v1",
+  "framework_sha256": "sha256:9e0337e76da0380ff79a84abadb04188cb3cd3f85e630bb2817957d4adc58b91",
+  "canonical_identity": {
+    "sequence_no": 202610270600,
+    "as_of_utc": "2026-10-27T06:07:54Z",
+    "plan_id": "xauusd-20261027-060754Z",
+    "signal_sha256": "sha256:edbfae7603220278052d498e22eca4f50150e7ce10902c1ffb0c44b1cd314738"
+  },
+  "canonical_report_sha256": "sha256:586985ef83c8c1d77976a179f55b0b5b16b877af18caf010c348b0b00de53a56",
+  "signal_sha256": "sha256:edbfae7603220278052d498e22eca4f50150e7ce10902c1ffb0c44b1cd314738",
+  "input_snapshot_time_utc": "2026-10-27T06:07:54Z",
+  "child": {
+    "attempted": true,
+    "exit_code": 0,
+    "output_nonempty": true,
+    "elapsed_ms": 29935
+  },
+  "child_command_sha256": "f10bc61ea350768df48371111cb6bb31509c064044ef817e70782266a0511e01",
+  "raw_model_output": "{\"best_plan_to_track\":\"A\",\"shadow_direction\":\"sell\",\"executable_now\":\"wait\",\"would_veto_now\":false,\"market_regime\":\"bearish_range\",\"overextension_risk\":\"high\",\"breakout_quality\":\"unconfirmed\",\"public_source_coverage\":\"partial_public_plus_system_proxy\",\"ranking\":[\"A\",\"C\",\"B\",\"E\",\"D\"],\"decisive_reasons\":[\"A 的固定 sell 回调结构最符合 H1/M15 Strong Sell、structural_bias=sell 与 bearish_continuation，同时入场区 4014.48-4022.15 位于现价上方，适合等待反弹失败确认。\",\"A 尚未触及入场区，且现价距 expected_fill_price=4018.32 为 11.53，高于 max_distance=3.84；必须先触区再取得合规 M15 收盘确认，因此 executable_now=wait。\",\"C 的顺势跌破回测结构次优，但 3988.36 尚未被有效跌破，breakout_quality=unconfirmed；B 距离过远，而 D 为逆势且 rr_tp1=0.594106。\",\"真实 H4、同步 DXY/美债收益率及完整事件 blackout 状态均不可用，且 FOMC 定于 10 月 27-28 日，故维持观察并以 MT5 报价为执行锚。\"]}\n",
+  "decision": {
+    "best_plan_to_track": "A",
+    "shadow_direction": "sell",
+    "executable_now": "wait",
+    "would_veto_now": false,
+    "market_regime": "bearish_range",
+    "overextension_risk": "high",
+    "breakout_quality": "unconfirmed",
+    "public_source_coverage": "partial_public_plus_system_proxy",
+    "ranking": [
+      "A",
+      "C",
+      "B",
+      "E",
+      "D"
+    ],
+    "decisive_reasons": [
+      "A 的固定 sell 回调结构最符合 H1/M15 Strong Sell、structural_bias=sell 与 bearish_continuation，同时入场区 4014.48-4022.15 位于现价上方，适合等待反弹失败确认。",
+      "A 尚未触及入场区，且现价距 expected_fill_price=4018.32 为 11.53，高于 max_distance=3.84；必须先触区再取得合规 M15 收盘确认，因此 executable_now=wait。",
+      "C 的顺势跌破回测结构次优，但 3988.36 尚未被有效跌破，breakout_quality=unconfirmed；B 距离过远，而 D 为逆势且 rr_tp1=0.594106。",
+      "真实 H4、同步 DXY/美债收益率及完整事件 blackout 状态均不可用，且 FOMC 定于 10 月 27-28 日，故维持观察并以 MT5 报价为执行锚。"
+    ]
+  },
+  "deterministic": {
+    "applied_scenario_id": "A",
+    "applied_direction": "sell"
+  },
+  "direction_conflict": false,
+  "fixed_scenarios": [
+    {
+      "scenario_id": "A",
+      "direction": "sell",
+      "entry_zone": {
+        "low": 4014.48,
+        "high": 4022.15
+      },
+      "entry_execution": {
+        "expected_fill_price": 4018.32,
+        "expected_fill_price_side": "bid",
+        "mode": "market_after_confirmation",
+        "order_type": "market"
+      },
+      "stop_loss": 4032.35,
+      "take_profits": [
+        4002.22,
+        3996.08,
+        3989.18
+      ],
+      "confirmation": {
+        "rule_id": "PULLBACK_FAIL_REJECT",
+        "timeframe": "M15",
+        "confirm_with_closed_bar_only": true,
+        "confirm_close_beyond_level": 4018.32,
+        "must_touch_entry_zone_before_confirmation": true,
+        "reclaim_level": 4018.32,
+        "max_bars_after_zone_touch": 4,
+        "max_closes_beyond_zone": 0,
+        "max_distance": 3.84,
+        "max_entry_distance_from_confirm": 3.84,
+        "zone_touch_method": "high_low_touch"
+      },
+      "runtime": {
+        "state": "WAIT_ENTRY_ZONE",
+        "decision_price": 4006.79,
+        "confirmation_close": 4009.0,
+        "confirmation_crossed": true,
+        "zone_touched": false,
+        "within_entry_zone": false,
+        "within_max_distance": false,
+        "entry_zone_distance": 7.69,
+        "distance": 11.53,
+        "max_distance": 3.84,
+        "rr_tp1": 1.147541
+      }
+    },
+    {
+      "scenario_id": "B",
+      "direction": "sell",
+      "entry_zone": {
+        "low": 4037.88,
+        "high": 4046.75
+      },
+      "entry_execution": {
+        "expected_fill_price": 4042.32,
+        "expected_fill_price_side": "bid",
+        "mode": "market_after_confirmation",
+        "order_type": "market"
+      },
+      "stop_loss": 4057.39,
+      "take_profits": [
+        4020.14,
+        4006.84,
+        3995.01
+      ],
+      "confirmation": {
+        "rule_id": "PULLBACK_FAIL_REJECT",
+        "timeframe": "M15",
+        "confirm_with_closed_bar_only": true,
+        "confirm_close_beyond_level": 4042.32,
+        "must_touch_entry_zone_before_confirmation": true,
+        "reclaim_level": 4042.32,
+        "max_bars_after_zone_touch": 4,
+        "max_closes_beyond_zone": 0,
+        "max_distance": 4.44,
+        "max_entry_distance_from_confirm": 4.44,
+        "zone_touch_method": "high_low_touch"
+      },
+      "runtime": {
+        "state": "WAIT_ENTRY_ZONE",
+        "decision_price": 4006.79,
+        "confirmation_close": 4009.0,
+        "confirmation_crossed": true,
+        "zone_touched": false,
+        "within_entry_zone": false,
+        "within_max_distance": false,
+        "entry_zone_distance": 31.09,
+        "distance": 35.53,
+        "max_distance": 4.44,
+        "rr_tp1": 1.471798
+      }
+    },
+    {
+      "scenario_id": "C",
+      "direction": "sell",
+      "entry_zone": {
+        "low": 3988.36,
+        "high": 3995.01
+      },
+      "entry_execution": {
+        "expected_fill_price": 3991.69,
+        "expected_fill_price_side": "bid",
+        "mode": "market_after_confirmation",
+        "order_type": "market"
+      },
+      "stop_loss": 4000.93,
+      "take_profits": [
+        3981.71,
+        3971.73,
+        3948.46
+      ],
+      "confirmation": {
+        "rule_id": "BREAKOUT_RETEST_FAIL",
+        "timeframe": "M15",
+        "confirm_with_closed_bar_only": true,
+        "breakout_level": 3988.36,
+        "close_beyond_level_required": true,
+        "must_close_back_level": 3988.36,
+        "max_distance": 6.65,
+        "max_retest_bars": 4,
+        "min_break_distance_usd": 1.0,
+        "atr_multiplier": 0.2,
+        "retest_zone": {
+          "low": 3988.36,
+          "high": 3995.01
+        }
+      },
+      "runtime": {
+        "state": "WAIT_ENTRY_ZONE",
+        "decision_price": 4006.79,
+        "confirmation_close": 4009.0,
+        "confirmation_crossed": false,
+        "zone_touched": false,
+        "within_entry_zone": false,
+        "within_max_distance": false,
+        "entry_zone_distance": 11.78,
+        "distance": 15.1,
+        "max_distance": 6.65,
+        "rr_tp1": 1.080087
+      }
+    },
+    {
+      "scenario_id": "D",
+      "direction": "buy",
+      "entry_zone": {
+        "low": 3995.01,
+        "high": 4000.93
+      },
+      "entry_execution": {
+        "expected_fill_price": 3997.97,
+        "expected_fill_price_side": "ask",
+        "mode": "market_after_confirmation",
+        "order_type": "market"
+      },
+      "stop_loss": 3983.04,
+      "take_profits": [
+        4006.84,
+        4012.75,
+        4029.01
+      ],
+      "confirmation": {
+        "rule_id": "SWEEP_AND_RECLAIM",
+        "timeframe": "M5",
+        "confirm_with_closed_bar_only": true,
+        "reclaim_level": 4000.93,
+        "sweep_level": 3988.36,
+        "max_distance": 5.92,
+        "max_reclaim_bars": 3,
+        "max_consecutive_closes_below_sweep": 1,
+        "min_sweep_distance": 1.5
+      },
+      "runtime": {
+        "state": "MISSED_ENTRY_DISTANCE",
+        "decision_price": 4006.88,
+        "confirmation_close": 4009.0,
+        "confirmation_crossed": true,
+        "zone_touched": true,
+        "within_entry_zone": false,
+        "within_max_distance": false,
+        "entry_zone_distance": 5.95,
+        "distance": 8.91,
+        "max_distance": 5.92,
+        "rr_tp1": 0.594106
+      }
+    },
+    {
+      "scenario_id": "E",
+      "direction": "buy",
+      "entry_zone": {
+        "low": 4020.14,
+        "high": 4029.01
+      },
+      "entry_execution": {
+        "expected_fill_price": 4024.57,
+        "expected_fill_price_side": "ask",
+        "mode": "market_after_confirmation",
+        "order_type": "market"
+      },
+      "stop_loss": 4012.75,
+      "take_profits": [
+        4042.32,
+        4055.62,
+        4073.36
+      ],
+      "confirmation": {
+        "rule_id": "BREAKOUT_RETEST_FAIL",
+        "timeframe": "M15",
+        "confirm_with_closed_bar_only": true,
+        "breakout_level": 4029.01,
+        "close_beyond_level_required": true,
+        "must_close_back_level": 4029.01,
+        "max_distance": 8.87,
+        "max_retest_bars": 4,
+        "min_break_distance_usd": 1.0,
+        "atr_multiplier": 0.2,
+        "retest_zone": {
+          "low": 4020.14,
+          "high": 4029.01
+        }
+      },
+      "runtime": {
+        "state": "WAIT_ENTRY_ZONE",
+        "decision_price": 4006.88,
+        "confirmation_close": 4009.0,
+        "confirmation_crossed": false,
+        "zone_touched": false,
+        "within_entry_zone": false,
+        "within_max_distance": false,
+        "entry_zone_distance": 13.26,
+        "distance": 17.69,
+        "max_distance": 8.87,
+        "rr_tp1": 1.501692
+      }
+    }
+  ],
+  "public_packet": {
+    "retrieved_at_utc": "2026-10-27T06:07:54Z",
+    "coverage_detail": "external_macro_plus_public_futures_proxy_plus_mt5_anchor",
+    "quote": {
+      "instrument": "GC=F",
+      "source": "yahoo_finance_gc_f_public_technical_proxy",
+      "futures_last_price": 4023.6,
+      "mt5_mid": 4006.84,
+      "price_comparison_mode": "not_compared_futures_vs_spot",
+      "absolute_discrepancy_gate_applied": false,
+      "sanity_check_mode": "crash_only_not_freshness_or_basis",
+      "relative_difference": 0.00418285,
+      "max_relative_difference": 0.03,
+      "source_urls": {
+        "chart_15m": "https://query1.finance.yahoo.com/v8/finance/chart/GC=F?range=5d&interval=15m",
+        "chart_1h": "https://query1.finance.yahoo.com/v8/finance/chart/GC=F?range=10d&interval=60m"
+      }
+    },
+    "technical": {
+      "availability": "available",
+      "summary_15m": "Strong Sell",
+      "summary_15m_score": -3,
+      "summary_1h": "Strong Sell",
+      "summary_1h_score": -3,
+      "rsi_14": 48.052425,
+      "stoch_rsi": 53.737636,
+      "adx_14": 9.390823,
+      "technical_confidence": 1.0
+    },
+    "macro": [
+      {
+        "fact": "Federal Reserve official calendar lists the October 2026 FOMC meeting on October 27-28. This confirms scheduled event context only, not a decision, release time, expected rate outcome or active blackout.",
+        "urls": [
+          "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+        ]
+      },
+      {
+        "fact": "Retrieved external spot page shows XAU/USD 4010.68 USD, bid 4010.51, ask 4010.85, day range 4000.18-4025.39. Display clock 01:51:29 has unverified timezone/date. MT5 at 2026-10-27T06:07:54Z has mid 4006.84, bid 4006.79, ask 4006.88, day range 4000.00-4025.63. External spot minus MT5 mid = +3.84 USD, a NON-SYNCHRONOUS difference, not a tradable basis or freshness proof. MT5 remains the execution anchor; its session label is unknown, not inferred from public data.",
+        "urls": [
+          "https://www.investing.com/currencies/xau-usd"
+        ]
+      },
+      {
+        "fact": "Vendor technical table timestamp Oct 27 2026 05:34 GMT precedes retrieval by about 37 minutes. Page summaries: 30-minute, hourly, 5-hours and daily Strong Sell. RSI(14)=46.295 neutral, MACD(12,26)=-0.863 sell, ADX(14)=18.574 neutral, ATR(14)=12.7048. Indicative vendor context only, not simultaneous MT5 confirmation; 5-hours is NOT true H4. The India variant is older (04:55 GMT, hourly Neutral), so cross-page summaries must not be merged into a synchronized signal.",
+        "urls": [
+          "https://www.investing.com/currencies/xau-usd-technical",
+          "https://in.investing.com/currencies/xau-usd-technical"
+        ]
+      }
+    ],
+    "unavailable_groups": [
+      "Complete economic-release calendar and exact blackout status not verified",
+      "Fresh gold-news article full text unavailable; no headline-only geopolitical inference",
+      "Independently timestamped live DXY and US Treasury yields unavailable; sidebar quotes not treated as synchronized observations",
+      "Synchronized external spot price and true external H4 unavailable; technical table lags retrieval"
+    ],
+    "notes": [
+      "MT5 remains the execution anchor",
+      "public GC=F data is advisory",
+      "GC futures and spot XAUUSD absolute prices are not a freshness comparison",
+      "true H4 evidence is unavailable and must not be inferred from M15"
+    ],
+    "external_retrieved_at_utc": "2026-10-27T06:10:41Z"
+  }
+}
