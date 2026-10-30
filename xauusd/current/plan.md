@@ -2,10 +2,10 @@
 
 This generator output is a candidate packet input only. The writer owns manifest, heartbeat, Validator output, READY, and bridge files.
 
-- plan_id: `xauusd-20261030-210841Z`
-- sequence_no: `202610302100`
-- created_at_utc: `2026-10-30T21:08:41Z`
-- valid_until_utc: `2026-10-30T22:08:41Z`
+- plan_id: `xauusd-20261030-210956Z`
+- sequence_no: `202610302105`
+- created_at_utc: `2026-10-30T21:09:56Z`
+- valid_until_utc: `2026-10-30T21:29:56Z`
 - action_mode: `demo_trade`
 - validator_result: `accepted_for_demo_trade`
 - selected_scenario_id: `A`
