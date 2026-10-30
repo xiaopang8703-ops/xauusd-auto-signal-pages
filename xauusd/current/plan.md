@@ -2,14 +2,14 @@
 
 This generator output is a candidate packet input only. The writer owns manifest, heartbeat, Validator output, READY, and bridge files.
 
-- plan_id: `xauusd-20261030-190740Z`
-- sequence_no: `202610301900`
-- created_at_utc: `2026-10-30T19:07:40Z`
-- valid_until_utc: `2026-10-30T20:07:40Z`
+- plan_id: `xauusd-20261030-190955Z`
+- sequence_no: `202610301905`
+- created_at_utc: `2026-10-30T19:09:55Z`
+- valid_until_utc: `2026-10-30T19:29:55Z`
 - action_mode: `demo_trade`
 - validator_result: `accepted_for_demo_trade`
 - selected_scenario_id: `A`
-- current_mid: `3878.14`
+- current_mid: `3878.93`
 - session: `late_new_york`
 
 ## Pre-Live Strategy Safety
