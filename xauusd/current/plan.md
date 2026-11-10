@@ -2,15 +2,15 @@
 
 This generator output is a candidate packet input only. The writer owns manifest, heartbeat, Validator output, READY, and bridge files.
 
-- plan_id: `xauusd-20261109-235814Z`
-- sequence_no: `202611092355`
-- created_at_utc: `2026-11-09T23:58:14Z`
-- valid_until_utc: `2026-11-10T00:18:14Z`
-- action_mode: `demo_trade`
-- validator_result: `accepted_for_demo_trade`
+- plan_id: `xauusd-20261110-000859Z`
+- sequence_no: `202611100005`
+- created_at_utc: `2026-11-10T00:08:59Z`
+- valid_until_utc: `2026-11-10T00:23:59Z`
+- action_mode: `alert_only`
+- validator_result: `accepted_for_alert_only`
 - selected_scenario_id: `E`
-- current_mid: `4137.99`
-- session: `unknown`
+- current_mid: `4137.41`
+- session: `asia`
 
 ## Pre-Live Strategy Safety
 
@@ -23,20 +23,20 @@ This generator output is a candidate packet input only. The writer owns manifest
 
 ### Public Source Confluence
 
-- enabled: `True`
-- technical_direction: `buy` confidence=`0.8`
-- rsi_state: `neutral` overextension_risk=`none`
+- enabled: `False`
+- technical_direction: `unknown` confidence=`0.0`
+- rsi_state: `unknown` overextension_risk=`none`
 - news_alignment: `neutral_or_mixed`
 - ABCDE level-map source: `mt5_intraday_adaptive_level_map`
 - score effect: emits generator-owned `scenario_adjustments`; Validator recomputes scores from emitted `public_confluence_status`; Package4 gates are unchanged.
 
 ## Scenario Ranking
 
-- A: pullback_reject buy enabled=True total=0.584116
-- B: pullback_reject buy enabled=True total=0.562196
-- C: breakout_retest_fail buy enabled=True total=0.697385
-- D: sweep_and_reclaim sell enabled=True total=0.2975
-- E: breakout_retest_fail sell enabled=True total=0.6725
+- A: pullback_reject buy enabled=True total=0.60672
+- B: pullback_reject buy enabled=True total=0.546791
+- C: breakout_retest_fail buy enabled=True total=0.682616
+- D: sweep_and_reclaim sell enabled=True total=0.3825
+- E: breakout_retest_fail sell enabled=True total=0.6825
 
 ## ABCDE Execution Contract
 
@@ -49,9 +49,9 @@ This generator output is a candidate packet input only. The writer owns manifest
 
 ## Selected Trade Geometry
 
-- entry_zone: `4130.15 - 4136.75`
-- expected_fill_price: `4133.45`
-- stop_loss: `4143.34`
-- tp1/tp2/tp3: `4110.37 / 4105.43 / 4080.7`
+- entry_zone: `4121.88 - 4128.78`
+- expected_fill_price: `4125.33`
+- stop_loss: `4135.68`
+- tp1/tp2/tp3: `4101.16 / 4095.98 / 4070.08`
 
 MT5 must not parse this Markdown file as a trading instruction.
